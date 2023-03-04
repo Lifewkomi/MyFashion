@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KomiFasHioN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="header-text">
+                <h1>KomiFasHioNs</h1>
+                <div class="virgil">
+                    <h1>"Life is so short that you can't waste even a day subscribing
+                        to what someone thinks you can do versus knowing what you can 
+                        do."
+                    </h1><br><br>
+                    <h2>~Virgil Abloh </h2>
+                </div>
+
+                <span class="square"></span>
+                <button class="button">Read More</button>
+
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">My Gallery</a></li>
+            <li><a href="#">Inspirations</a></li>
+            <li><a href="#">Reach Out</a></li>
+        </ul>
+    </nav>
+    <img src="logos/menu-24px.svg" id="menubtn">
+
+
+<!-- About -->
+
+<section id="about">
+    <div class="about-left-col">
+        <img src="pictures/IMG_2043.JPG">
+    </div>
+
+    <div class="about-right-col">
+
+        <div class="text">
+            <h1>About Me</h1>
+            <span class="square"></span>
+            <p>
+                Computer Scientist who finds Fashion as an <b>Art</b> of its own and a <b>Statement</b>
+                he uses to mark his prescence be it at his place of work, leisure
+                or even at home.
+            </p><br><br>
+                <div class="line">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                </div>
+            <h2>Luku ya leo, si ya Kesho!</h2> 
+
+             <h3>~Komi~</h3>
+            
+        </div>
+
+    </div>
+
+</section>
+
+<!---myGallery-->
+
+<section id="features">
+
+    <div class="gallery-container">
+        <h1>My Gallery</h1>
+        <div class="gallery">
+            <div class="img-box"><h3>One</h3></div>
+            <div class="img-box"><h3>Two</h3></div>
+            <div class="img-box"><h3>Three</h3></div>
+            <div class="img-box"><h3>Four</h3></div>
+            <div class="img-box"><h3>Five</h3></div>
+            
+        </div>
+    </div>
+
+</section>
+
+<!----outfits-->
+<section id="outfits">
+    <div class="outfit-course-row">
+        <div class="outfit-left-col">
+            <div class="outfit-text">
+                <h1>Browse My Outfits</h1>
+                <span class="square"></span>
+                <p>"Life is so short that you can't waste even a day subscribing
+                    to what someone thinks you can do versus knowing what you can 
+                    do."
+                </p>
+                <button class="common-btn">View My Outfits.</button>
+            </div>
+        </div>
+        <div class="outfit-right-col">
+            <img src="pictures/Drake&21.jpg">
+        </div>
+    </div>
+
+</section>
+<!---contacts-->
+<section id="contact">
+    <div class="container contact-row">
+
+        <div class="contact-left-col">
+            <img src="pictures/download.jpg" >
+        </div>
+
+        <div class="contact-right-col">
+
+            <h1>Sign Up to join our Fashion Experience</h1>
+
+            <form>
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Email eg:phil@gmail.com">
+                <input type="password" placeholder="Enter Password">
+                <div class="btn-box">
+                    <button class="common-btn">Sign Up.</button>
+                    <button class="common-btn">Start Free Trial.</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-700px"
+        menubtn.onclick = function(){
+            if(sideNav.style.right == "-700px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-700px"
+            }
+        }
+    </script>
+
+</body>
+</html>
+
