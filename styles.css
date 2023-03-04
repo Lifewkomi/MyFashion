@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header{
+    height: 100vh;
+    background-image: url(pictures/axel-ruffini-iulnjpZyWnc-unsplash.jpg);
+    background-position: center;
+}
+
+.container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.header-text{
+    max-width:70%;
+}
+
+.header-text h1{
+    margin-bottom: 5%;
+    font-size: 204px;
+    display: flex;
+    color:#f88800;
+}
+
+.virgil{
+    display: flex;
+}
+
+.virgil h1{
+    font-style: italic;
+    font-size: 100px;
+    color:#a9957d;
+    flex-basis: 20%;
+    margin-top: 2%;
+}
+.virgil h2{
+    font-style: italic;
+    font-size: 90px;
+    color:#a9957d;
+    margin-top: 47%;
+    margin-left: -19%;
+}
+
+.square{
+    height: 12px;
+    width: 12px;
+    display: contents;
+    background: #f67c92;
+    margin: 15px 0;
+}
+
+.button{
+    margin: 2.5%;
+    padding: 18px 30px;
+    background: transparent;
+    outline: none;
+    border: 5px solid rgb(244, 227, 205);
+    border-radius: 20%;
+    color: #f88800;
+    font-weight: bold;
+    font-size: 56px;
+    cursor: pointer;
+}
+
+p{
+    font-size: 59px;
+    line-height: 100px;
+    color: #777;
+}
+
+.header-text button{
+    margin-bottom: 1.5%;
+}
+
+.line{
+    line-height: 100%;
+
+}
+
+.line-1{
+    width: 15%;
+    height: 100px;
+    background: #f88800;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.line-2{
+    width: 15%;
+    height: 100px;
+    background: #f88800;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.line-3{
+    width: 15%;
+    height: 100px;
+    background: #f88800;
+    display: inline-block;
+}
+
+#sideNav{
+    width: 700px;
+    height: 100vh;
+    position: fixed;
+    right: -700px;
+    top: 0;
+    background: transparent;
+    z-index: 2;
+    transition: .5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 35% 10%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#f88800;
+    font-size: 80px;
+}
+#menubtn{
+    width: 100px;
+    position: fixed;
+    right: 200px;
+    top: 11%;
+    z-index: 2;
+    cursor: pointer;
+    background-color: rgb(244, 227, 205);
+}
+
+/*--about--*/
+
+#about{
+    padding: 100px 0;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    background-color: rgb(244, 227, 205);
+}
+
+.about-left-col{
+    flex-basis: 50%;
+}
+
+.about-left-col img{
+    width: 80%; 
+    margin-left: 5%;
+    border-radius: 7%;
+}
+
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+
+    
+}
+
+.text{
+    max-width: 1000px;
+    margin-right: 16%;
+    display: inline-block;
+}
+
+.text h1{
+    margin-bottom: 10%;
+    margin-left: 50%;
+    font-size: 105px;
+    display: flex;
+    color:#f88800;
+}
+
+.text h2{
+    margin: 50px 0 10px;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.text h3{
+    font-size: 50px;
+    font-style: italic;
+}
+
+/*----my Gallery ---*/
+
+.gallery-container{
+    width: 100%;
+    height: 130vh;
+    background: rgb(244, 235, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-container h1{
+    font-size: 190px;
+    margin-bottom: 47%;
+    margin-left: 20%;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20%;
+}
+
+.img-box{
+    width: 500px;
+    height: 2000px;
+    margin: 15px;
+    border-radius: 150px;
+    background: url(pictures/_MG_9902-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: 0.7s;
+}
+
+.img-box:nth-child(2){
+    background: url(pictures/IMG_9545.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(3){
+    background: url(pictures/mark-adriane-bO3S03I2Aw8-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(4){
+    background: url(pictures/IMG_3928.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box h3{
+    color: #f88800;
+    font-size: 100px;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    opacity: 0; 
+    transition: bottom 0.5s, opacity 0.5s; 
+}
+
+.img-box:hover{
+    width: 1000px;
+    cursor: pointer;
+}
+
+.img-box:hover h3{
+    opacity: 1;
+    bottom: 25px;
+}
+
+/*---outfits----*/
+#outfits{
+    background-color: bisque;
+}
+.outfit-course-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.outfit-right-col{
+    flex-basis: 50%;
+}
+
+.outfit-right-col img{
+    width: 50%;
+}
+
+.outfit-left-col{
+    flex-basis: 50%;
+}
+
+.outfit-text{
+    max-width: 350px;
+}
+
+.outfit-text button{
+    margin: 30px 0;
+}
+
+/*---contact----*/
+
+#contact{
+    height: 120vh;
+    background-color: rgb(244, 235, 224);
+}
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-left-col,.contact-right-col{
+    flex-basis: 50%;
+}
+
+.contact-left-col img{
+    width: 70%;
+    margin-top: 30%;
+}
+
+form{
+    max-width: 50%;
+    margin-top: 4%;
+    margin-bottom: 30%;
+    max-height: 200%;
+}
+
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #f88800;
+}
+
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+
